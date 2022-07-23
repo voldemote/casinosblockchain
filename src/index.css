@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .active {
+        @apply text-[#3e47e0] !important
+    }
+
+    .h1 {
+        @apply block text-[2em] my-[0.67em] mx-0 font-bold
+    }
+
+    .h2 {
+        @apply block text-[1.5em] my-[0.83em] mx-0 font-bold
+    }
+
+    .h3 {
+        @apply block text-[1.17em] my-[1em] mx-0 font-bold
+    }
+
+    .h4 {
+        @apply block text-[1em] my-[1.33em] mx-0 font-bold
+    }
+
+    .h5 {
+        @apply block text-[.83em] my-[1.67em] mx-0 font-bold
+    }
+
+    .h6 {
+        @apply block text-[1.67em] my-[2.33em] mx-0 font-bold
+    }
+}
+
+.css-ha3bif-MuiTimelineItem-root:before {
+    display: none !important;
+}
+
+.divHasTempBG {
+    background: url(../src/Assets/images/tempBG1.png), radial-gradient(100% 100% at 100% 100%, #2f0857 0%, #000331 100%);
+}
+
+.divHasTempBG2 {
+    background: url(../src/Assets/images/tempBG1.png), radial-gradient(100% 100% at 100% 100%, #562d81 0%, #1d228e 100%);
+}
+
+#tempBG2-1 {
+    background: #f4f6f9;
+    background-image: url(../src/Assets/images/tempBG2-1.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+#tempBG2-2 {
+    background: #f4f6f9;
+    background-image: url(../src/Assets/images/tempBG2-2.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+#tempBG2-3 {
+    background: #f4f6f9;
+    background-image: url(../src/Assets/images/tempBG2-3.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+#tempBG2-4 {
+    background: #f4f6f9;
+    background-image: url(../src/Assets/images/tempBG2-4.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+#tempBG2-5 {
+    background: #f4f6f9;
+    background-image: url(../src/Assets/images/tempBG2-5.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+#tempBG2-6 {
+    background: #f4f6f9;
+    background-image: url(../src/Assets/images/tempBG2-6.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.swiper-wrapper {
+    padding-bottom: 4px;
+}
+
+.swiper-slide {
+    width: fit-content !important;
+}
+
+
+.Swiper-prev,
+.Swiper-next {
+    position: absolute;
+    top: 50%;
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+}
+
+.Swiper-prev {
+    left: 10px;
+    right: auto;
+}
+
+.Swiper-next {
+    right: 10px;
+    left: auto;
+}
+
+.swiper-button-disabled {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}

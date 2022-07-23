@@ -1,0 +1,154 @@
+p {
+    color: #262847;
+    font-size: 16px;
+    line-height: 1.5rem;
+    margin-bottom: 0.875rem;
+    letter-spacing: 0.0125rem;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+ol.dotted-list,
+ol.is-style-dotted-list,
+ul.dotted-list,
+ul.is-style-dotted-list {
+    list-style: none;
+    counter-reset: dotted-counter;
+    position: relative;
+}
+
+ol.dotted-list li,
+ol.is-style-dotted-list li,
+ul.dotted-list li,
+ul.is-style-dotted-list li {
+    counter-increment: dotted-counter;
+    position: relative;
+    padding-left: 56px;
+    padding-bottom: 30px;
+}
+
+ol.dotted-list li::before,
+ol.is-style-dotted-list li::before,
+ul.dotted-list li::before,
+ul.is-style-dotted-list li::before {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: 0;
+    z-index: 5;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #262847;
+    content: counter(dotted-counter);
+    color: white;
+    font-weight: bold;
+}
+
+ol.dotted-list li::after,
+ol.is-style-dotted-list li::after,
+ul.dotted-list li::after,
+ul.is-style-dotted-list li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    left: 20px;
+    border-left: 2px dashed #80869e;
+}
+
+ol.dotted-list li:last-child::after,
+ol.is-style-dotted-list li:last-child::after,
+ul.dotted-list li:last-child::after,
+ul.is-style-dotted-list li:last-child::after {
+    content: "";
+    border-left: none;
+}
+
+
+ul.checked-list,
+ul.is-style-checked-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+ul.checked-list,
+ul.is-style-checked-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+ul.checked-list li,
+ul.is-style-checked-list li {
+    position: relative;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Gilroy, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2rem;
+}
+
+.news-single-content__content li {
+    color: #262847;
+}
+
+ul.checked-list li::before,
+ul.is-style-checked-list li::before {
+    content: "";
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSAyMkM0LjkyNDg3IDIyIDAgMTcuMDc1MSAwIDExQzAgNC45MjQ4NyA0LjkyNDg3IDAgMTEgMEMxNy4wNzUxIDAgMjIgNC45MjQ4NyAyMiAxMUMyMiAxNy4wNzUxIDE3LjA3NTEgMjIgMTEgMjJaTTkgMTIuNTg1OEwxNC4yOTI5IDcuMjkyODlMMTUuNzA3MSA4LjcwNzExTDkgMTUuNDE0Mkw1LjI5Mjg5IDExLjcwNzFMNi43MDcxMSAxMC4yOTI5TDkgMTIuNTg1OFoiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcikiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhciIgeDE9IjIyIiB5MT0iMTEiIHgyPSIwIiB5Mj0iMTEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzREQkMyNCIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyRENBNjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K);
+    background-size: cover;
+}
+
+.wp-block-table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tbody tr td {
+    padding: 13px 16px;
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    color: #262847;
+}
+
+table tbody tr td:last-child {
+    text-align: right;
+}

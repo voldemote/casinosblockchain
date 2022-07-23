@@ -1,0 +1,20 @@
+module.exports = {
+  important: true,
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      screens: {
+        'xs': "420px",
+        'sm': "640px",
+        'md': "768px",
+        'lg': "1024px",
+        'xl': "1260px",
+        '2xl': "1376px",
+      }
+
+    },
+  },
+  plugins: [],
+}
