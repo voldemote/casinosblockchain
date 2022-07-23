@@ -46,6 +46,7 @@ import BitcoinComGameReview from './pages/Reviews/BitcoinComGameReview';
 import BitStarzGameReview from './pages/Reviews/BitStarzGameReview';
 import KingBillyGameReview from './pages/Reviews/KingBillyGameReview';
 import MBitGameReview from './pages/Reviews/MBitGameReview';
+import EarnBetGameReview from './pages/Reviews/EarnBetGameReview';
 // review pages end
 
 function App() {
@@ -91,6 +92,7 @@ function App() {
         <Route path='/review/bitstarz.com' element={<BitStarzGameReview />} />
         <Route path='/review/kingbillycasino.com' element={<KingBillyGameReview />} />
         <Route path='/review/mbitcasino.com' element={<MBitGameReview />} />
+        <Route path='/review/earnbet.io' element={<EarnBetGameReview />} />
         {/* review pages end */}
       </Routes>
       <ToastContainer style={{ fontSize: '16px' }} theme='dark' />
